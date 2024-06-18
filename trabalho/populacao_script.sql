@@ -116,12 +116,12 @@ INSERT INTO animal_paciente (nome, idade, idespecie, idcliente_dono, massa_kg, a
 ('Nemo', 1, 6, 6, 0.2, 0),
 ('Spirit', 6, 7, 7, 500.0, 0),
 ('Shelly', 10, 8, 8, 2.0, 0),
-('Slither', 4, 9, 9, 1.8, 1),
 ('Piglet', 1, 10, 10, 0.5, 0),
-('Ratty', 1, 11, 11, 0.2, 0),
 ('Lizzy', 3, 12, 12, 0.5, 0),
 ('Dolly', 4, 13, 13, 60.0, 0),
 ('Bessie', 5, 14, 14, 700.0, 0),
+('Bola Augusto', 4, 1, 9, 5.5, 0),
+('Doki', 7, 1, 11, 5.0, 1),
 ('Porky', 2, 15, 15, 50.0, 1);
 
 -- Insert into atendimento
@@ -153,12 +153,12 @@ INSERT INTO fornecedor (nome, cnpj, inscricao_estadual, endereco, cidade_idcidad
 ('Fornecedor G', 78901234000107, 789012345, 'Rua G, 700', 7, 71987654321),
 ('Fornecedor H', 89012345000108, 890123456, 'Rua H, 800', 8, 81987654321),
 ('Fornecedor I', 90123456000109, 901234567, 'Rua I, 900', 9, 91987654321),
-('Fornecedor J', 11234567000110, 112345678, 'Rua J, 1000', 10, 11987654322),
-('Fornecedor K', 22345678000111, 223456789, 'Rua K, 1100', 11, 21987654322),
-('Fornecedor L', 33456789000112, 334567890, 'Rua L, 1200', 12, 31987654322),
-('Fornecedor M', 44567890000113, 445678901, 'Rua M, 1300', 13, 41987654322),
-('Fornecedor N', 55678901000114, 556789012, 'Rua N, 1400', 14, 51987654322),
-('Fornecedor O', 66789012000115, 667890123, 'Rua O, 1500', 15, 61987654322);
+('Fornecedor J', 11234567000110, 112345678, 'Rua J, 1000', 1, 11987654322),
+('Fornecedor K', 22345678000111, 223456789, 'Rua K, 1100', 4, 21987654322),
+('Fornecedor L', 33456789000112, 334567890, 'Rua L, 1200', 1, 31987654322),
+('Fornecedor M', 44567890000113, 445678901, 'Rua M, 1300', 1, 41987654322),
+('Fornecedor N', 55678901000114, 556789012, 'Rua N, 1400', 4, 51987654322),
+('Fornecedor O', 66789012000115, 667890123, 'Rua O, 1500', 4, 61987654322);
 
 -- Insert into medicamento
 INSERT INTO medicamento (nome, data_validade, data_fabricacao, data_compra, valor_aplicacao, fornecedor_idfornecedor) VALUES
