@@ -107,7 +107,7 @@
 -- ('Paulo Silva', 'Rua EE, 3400', '66789012344', 15);
 
 -- Insert into animal_paciente
--- INSERT INTO animal_paciente (nome, idade, idespecie, idcliente_dono, massa_kg, alergico) VALUES
+-- INSERT INTO animal_paciente (nome, idade, idespecie, idcliente_dono, massa_kg, alergico) VALUES 
 -- ('Rex', 5, 1, 1, 20.5, 0),
 -- ('Mia', 3, 2, 2, 4.2, 1),
 -- ('Loro', 2, 3, 3, 0.3, 0),
@@ -122,7 +122,8 @@
 -- ('Bessie', 5, 14, 14, 700.0, 0),
 -- ('Bola Augusto', 4, 1, 9, 5.5, 0),
 -- ('Doki', 7, 1, 11, 5.0, 1),
--- ('Porky', 2, 15, 15, 50.0, 1);
+-- ('Porky', 2, 15, 15, 50.0, 1),
+-- ('John Snow', 2, 1, 11, 8.0, 0);
 
 -- Insert into atendimento
 -- INSERT INTO atendimento (descricao, idpaciente, data_hora, diagnostico, valor_total) VALUES
