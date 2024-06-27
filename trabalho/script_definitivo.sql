@@ -165,7 +165,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`procedimento` (
   `idprocedimento` INT UNSIGNED NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(50) NOT NULL,
   `valor_procedimento` DECIMAL(10,2) NOT NULL,
-  `doenca_prevenida` VARCHAR(100) NULL,
+  `doenca_prevenida` VARCHAR(100) DEFAULT "Nenhuma",
   `descricao` TEXT NULL,
   PRIMARY KEY (`idprocedimento`),
   UNIQUE INDEX `idprocedimento_UNIQUE` (`idprocedimento` ASC) )

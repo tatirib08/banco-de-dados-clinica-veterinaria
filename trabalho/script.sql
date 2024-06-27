@@ -2,9 +2,9 @@
 DELETE FROM cidade WHERE
 nome = "Curitiba";
 
-UPDATE estado
+UPDATE cidade
 SET nome = "Ouro Preto"
-WHERE idestado = 3;
+WHERE estado_idestado = 3;
 
 -- letra b) SELECT com LIKE 
 SELECT nome 
