@@ -21,15 +21,7 @@ USE `mydb` ;
 -- -----------------------------------------------------
 -- Table `mydb`.`estado`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`estado` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`estado` (
-  `idestado` INT NOT NULL AUTO_INCREMENT,
-  `nome` VARCHAR(45) NOT NULL,
-  `uf` VARCHAR(2) NOT NULL,
-  PRIMARY KEY (`idestado`),
-  UNIQUE INDEX `idestado_UNIQUE` (`idestado` ASC))
-ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
