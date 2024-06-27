@@ -1,3 +1,11 @@
+-- Um DELETE e um UPDATE em alguma tabela
+DELETE FROM cidade WHERE
+nome = "Curitiba";
+
+UPDATE estado
+SET nome = "Ouro Preto"
+WHERE idestado = 3;
+
 -- letra b) SELECT com LIKE 
 SELECT nome 
 FROM estado

@@ -195,25 +195,6 @@
  (13,9 ), --  I (dor de barriga)
  (14, 2), -- B (vacinação)
  (15, 10); -- J (ultrassom)
-  
-
- INSERT INTO atendimento_has_procedimento(atendimento_idconsulta,procedimento_idprocedimento) VALUES
- (1, 14),  -- consulta geral 
- (2, 15), -- vacinação
- (3, 2), -- exame de sangue 
- (4, 1), -- cirurgia
- (5, 5), -- raio x
- (6, 6), -- castração 
- (7, 2), -- exame de sangue
- (8, 1), -- cirurgia
- (9, 8), -- tratamento oftamológico
- (10, 3), -- banho e tosa
- (11, 11), -- tratamento odontológico
- (12, 7), -- internação
- (13, 14), -- consulta geral
- (14, 16), -- vacinação
- (15, 4); --  exame de ultrassom 
-
 
  INSERT INTO procedimento(idprocedimento, nome,valor_procedimento) VALUES 
  (1, 'Cirurgia', 500.00),
@@ -247,6 +228,23 @@
  (27, 'Nobivac Myxo-RHD Plus', 50.00, 'Mixomatose', 'Vacinação'),
  (28, 'Rika-Vacc Myxo sc', 50.00, 'Mixomatose', 'Vacinação'),
  (29, 'Fluvac innovator® ewt', 50.00, 'Encefalomielite Equina, Tétano', 'Vacinação');
+
+ INSERT INTO atendimento_has_procedimento(atendimento_idconsulta,procedimento_idprocedimento) VALUES
+ (1, 14),  -- consulta geral 
+ (2, 15), -- vacinação
+ (3, 2), -- exame de sangue 
+ (4, 1), -- cirurgia
+ (5, 5), -- raio x
+ (6, 6), -- castração 
+ (7, 2), -- exame de sangue
+ (8, 1), -- cirurgia
+ (9, 8), -- tratamento oftamológico
+ (10, 3), -- banho e tosa
+ (11, 11), -- tratamento odontológico
+ (12, 7), -- internação
+ (13, 14), -- consulta geral
+ (14, 16), -- vacinação
+ (15, 4); --  exame de ultrassom 
 
  -- insert em funcionario_has_atendimento 
  INSERT INTO funcionario_has_atendimento(funcionario_idfuncionario, atendimento_idconsulta) VALUES
