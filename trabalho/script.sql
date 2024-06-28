@@ -31,10 +31,9 @@ SELECT funcionario.nome as nome_funcionario, estado.nome as nome_estado
 FROM (funcionario JOIN cidade ON funcionario.cidade_idcidade = cidade.idcidade)
 JOIN estado ON cidade.estado_idestado = estado.idestado;
 
--- -----------------------------------
+
 -- letra g) SELECT com JOIN com quatro tabelas
--- selecione o nome dos pacientes, a descrição do atendimento e o nome do procedimento realizado:
- 
+
 select animal_paciente.nome as paciente, atendimento.descricao as descricao, procedimento.nome as procedimento
 from ((( animal_paciente inner join atendimento 
 on animal_paciente.idpaciente=atendimento.idpaciente)
@@ -45,7 +44,6 @@ on atendimento_has_procedimento.procedimento_idprocedimento=procedimento.idproce
 
 
  -- letra h) SELECT com JOIN com no mínimo 3 tabelas, group by e having 
--- selecione o nome do procedimento e a soma do valor total recebido nos atendimentos agrupados por procedimento. 
 
 select sum(atendimento.valor_total) as total, procedimento.nome as procedimento
 from ((atendimento inner join atendimento_has_procedimento 
@@ -56,7 +54,6 @@ group by procedimento.nome
 having total >= 120;
 
 -- letra i) SELECT com JOIN com no mínimo 3 tabelas, group by (diferente do item h) 
--- selecione o nome da cidade e a quantidade de espécies de pacientes agrupadas por cidade
 
 select count(animal_paciente.idespecie) as totalEspecies, cidade.nome
 from (( cidade inner join cliente_dono 
@@ -67,8 +64,6 @@ having totalEspecies > 1;
 
 
 -- letra j) SELECT com JOIN com no mínimo 2 tabelas, Where, group by e having (diferente do item h e i) 
--- selecione o nome do funcionario e a quantidade de atendimentos (agrupando por funcionario), 
--- para funcionarios cujo nome comece com aletra J, e a quantidade de atendimento seja maior que 1.
 
 select count(atendimento.idconsulta) as quantidade, funcionario.nome
 from ((funcionario inner join funcionario_has_atendimento
