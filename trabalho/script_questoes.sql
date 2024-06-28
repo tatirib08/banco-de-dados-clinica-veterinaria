@@ -12,13 +12,13 @@ FROM estado
 WHERE nome LIKE "P%";
 
 -- letra c) SELECT com order by
-SELECT idespecie, nome
-FROM animal_paciente
-ORDER BY idespecie;
+SELECT especie.nome, animal_paciente.nome, especie.idespecie
+FROM animal_paciente INNER JOIN especie ON animal_paciente.idespecie=especie.idespecie
+ORDER BY especie.idespecie;
 
 -- letra d) SELECT com GROUP BY E HAVING
-SELECT fornecedor.cidade_idcidade as cidade, COUNT(*) as total
-FROM fornecedor
+SELECT cidade.nome as nomeCidade, fornecedor.cidade_idcidade as idCidade, COUNT(*) as totalFornecedores
+FROM fornecedor INNER JOIN cidade ON fornecedor.cidade_idcidade=cidade.idcidade
 GROUP BY fornecedor.cidade_idcidade
 HAVING count(*) > 3;
 
